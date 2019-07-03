@@ -1,0 +1,36 @@
+.header {
+  max-width: 960;
+  background-color: #1f2d42;
+  margin: 0 auto;
+  padding-left: 3rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.01%;
+}
+
+.title {
+  font-size: 2rem;
+  color: white;
+  padding-right: 3rem;
+  text-align: left;
+  text-decoration: none;
+  margin-left: 3rem;
+  font-family: "Permanent Marker";
+}
+
+.link {
+  font-size: 0.9rem;
+  color: beige;
+  padding: 0rem 0.5rem;
+  padding-bottom: 0.1rem;
+  margin-right: 0.5rem;
+  border-style: double;
+  border-color: black;
+  border-radius: 2.5rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+.link:hover {
+  color: lavender;
+  background-color: black;
+}
