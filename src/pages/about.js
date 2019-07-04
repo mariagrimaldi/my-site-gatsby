@@ -5,8 +5,8 @@ import FancyTitle from "../components/title"
 
 const AboutPage = () => (
   <Layout>
-    <FancyTitle titleText="About Me" />
-    <FancyParagraph paragraphText="helllllooooo world!"></FancyParagraph>
+    <FancyTitle titleText="About" />
+    <FancyParagraph paragraphText="Travelling Europe to find all the places worthy of two thumbs up"></FancyParagraph>
   </Layout>
 )
 

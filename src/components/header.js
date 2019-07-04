@@ -12,12 +12,14 @@ const Header = ({ siteTitle }) => (
         <Link to="/" className={header.title}>
           {siteTitle}
         </Link>
-
+        <Link to="/contact" className={header.link}>
+          contact
+        </Link>
         <Link to="/about" className={header.link}>
           about
         </Link>
-        <Link to="/contact" className={header.link}>
-          contact
+        <Link to="/posts/" className={header.link}>
+          posts
         </Link>
       </h1>
     </div>

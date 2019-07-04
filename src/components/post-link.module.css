@@ -1,0 +1,22 @@
+.PostsLink {
+  font-size: 0.9rem;
+  color: black;
+  padding: 0rem 0.5rem;
+  padding-bottom: 0.1rem;
+  margin-right: 0.5rem;
+  border-style: double;
+  border-color: #1f2d42;
+  border-radius: 2.5rem;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  margin-top: 2rem;
+  font-family: "Comfortaa";
+  font-weight: bold;
+}
+
+.PostsLink:hover {
+  color: lavender;
+  background-color: black;
+}
