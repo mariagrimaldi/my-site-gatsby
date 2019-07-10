@@ -1,7 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { Divider } from "antd"
+
 import PostLink from "../components/post-link"
-import Layout from "../components/layout"
+import Layout1 from "../components/newindex"
+import FancyTitle from "../components/title"
 
 const PostsPage = ({
   data: {
@@ -13,9 +16,21 @@ const PostsPage = ({
     .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
 
   return (
-    <Layout>
+    <Layout1>
+      <FancyTitle titleText="List of Posts" />
+      <hr
+        style={{
+          display: "block",
+          padding: "0",
+          borderWidth: "0.5px",
+          marginLeft: "25%",
+          marginRight: "25%",
+          borderStyle: "dashed",
+          marginBottom: "1rem",
+        }}
+      />
       <div>{Posts}</div>
-    </Layout>
+    </Layout1>
   )
 }
 

@@ -1,7 +1,6 @@
 .PostsLink {
   font-size: 0.9rem;
   color: black;
-  padding: 0rem 0.5rem;
   padding-bottom: 0.1rem;
   margin-right: 0.5rem;
   border-style: double;
@@ -9,14 +8,26 @@
   border-radius: 2.5rem;
   text-decoration: none;
   text-align: center;
-  width: 100%;
+  width: 50%;
+  margin-left: 25%;
   display: inline-block;
-  margin-top: 2rem;
+  margin-top: 0.1rem;
   font-family: "Comfortaa";
   font-weight: bold;
 }
 
 .PostsLink:hover {
   color: lavender;
+  border-color: lavender;
   background-color: black;
+}
+
+hr {
+  display: block;
+  padding: 0;
+  border-width: 0.5px;
+  margin-left: 25%;
+  margin-right: 25%;
+  border-style: dashed;
+  margin-top: 1rem;
 }

@@ -1,9 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
 import FancyParagraph from "../components/fancy-paragraph"
 import FancyTitle from "../components/title"
+import Layout1 from "../components/newindex"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -11,7 +11,7 @@ export default function Template({
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
   return (
-    <Layout>
+    <Layout1>
       <div className="blog-post-container">
         <div
           className="blog-post"
@@ -27,7 +27,7 @@ export default function Template({
           </div>
         </div>
       </div>
-    </Layout>
+    </Layout1>
   )
 }
 

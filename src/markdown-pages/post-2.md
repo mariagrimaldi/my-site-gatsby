@@ -1,7 +1,7 @@
 ---
 path: "/blog/rome"
 date: "2019-06-15"
-title: "The second double thumbs up"
+title: "The Second Double Thumbs Up"
 ---
 
 <img src="https://files.slack.com/files-tmb/TK33RJKFV-FL4LJRZAA-39aaeada4a/rome_1024.jpg"

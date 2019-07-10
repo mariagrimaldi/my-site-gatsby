@@ -1,27 +1,69 @@
-.names {
-  width: 50%;
-  box-sizing: border-box;
-  border: 1px solid black;
-  resize: none;
-}
-
 input[type="text"]:focus {
   border: 2px solid black;
 }
 
 input[type="text"] {
-  width: 40%;
-  padding: 12px 20px;
+  width: 80%;
+  padding: 0.5rem 0.5rem;
   margin: 8px 0;
   box-sizing: border-box;
+  font-family: "Comfortaa";
 }
 
-input[type=submit] {
-    background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 16px 32px;
+textarea {
+  height: 200px;
+  resize: none;
+  margin-top: 1rem;
+  font-family: "Comfortaa";
+}
+
+button {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #1f2d42;
+  padding: 0.2rem 0.5rem;
+  margin-right: 3rem;
+  border-style: double;
+  border-width: 3px;
+  border-color: #1f2d42;
+  border-radius: 2.5rem;
   text-decoration: none;
-  margin: 4px 2px;
+  text-align: center;
+  font-family: "Comfortaa";
+  float: right;
+  margin-top: 0.75rem;
   cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+  color: lavenderblush;
+  border-color: lavenderblush;
+}
+
+.names {
+  width: 30rem;
+  box-sizing: border-box;
+  border: 1px solid black;
+  background-color: whitesmoke;
+}
+
+.comments {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid black;
+  background-color: whitesmoke;
+}
+
+.row {
+  padding-left: 3rem;
+}
+
+.title {
+  padding: 0.5rem;
+  padding-top: 2rem;
+  font-size: 2rem;
+  color: black;
+  text-align: center;
+  font-family: "Permanent Marker";
 }

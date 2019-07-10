@@ -3,8 +3,6 @@ import PropTypes from "prop-types"
 import React from "react"
 import header from "./header.module.css"
 
-import FancyTitle from "../components/title"
-
 const Header = ({ siteTitle }) => (
   <header className={header.header}>
     <div>
