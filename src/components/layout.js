@@ -12,7 +12,7 @@ const { Header, Content, Footer } = Layout
 
 const Layout1 = ({ children }) => {
   const data = useStaticQuery(graphql`
-    query TitleQuery {
+    query SiteTitleQuery {
       site {
         siteMetadata {
           title
