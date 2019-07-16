@@ -1,6 +1,6 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 
-import FancyParagraph from "../components/fancy-paragraph"
 import FancyTitle from "../components/title"
 import twothumbs from "../images/twothumbs.jpg"
 import SEO from "../components/seo"
@@ -8,7 +8,12 @@ import Layout1 from "../components/newindex"
 
 const IndexPage = () => (
   <Layout1>
-    <SEO title="Home" />
+    {/* <SEO title=" " /> */}
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Two Thumbs Up!</title>
+      <link rel="canonical" href="http://mysite.com/example" />
+    </Helmet>
     <FancyTitle titleText="All the places that have gotten my two thumbs up" />
     <img
       src={twothumbs}

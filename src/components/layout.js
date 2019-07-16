@@ -1,20 +1,18 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
+import { Link } from "gatsby"
 import PropTypes from "prop-types"
+import { Layout, Menu } from "antd"
+
+import newindex from "./newindex.module.css"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
 import "./layout.css"
 
-const Layout = ({ children }) => {
+const { Header, Content, Footer } = Layout
+
+const Layout1 = ({ children }) => {
   const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
+    query TitleQuery {
       site {
         siteMetadata {
           title
@@ -22,27 +20,70 @@ const Layout = ({ children }) => {
       }
     }
   `)
-
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
-      >
-        <main>{children}</main>
-        <footer></footer>
-      </div>
+      <Layout className="layout">
+        <Header
+          style={{
+            position: "fixed",
+            zIndex: 1,
+            width: "100%",
+          }}
+        >
+          <Link to="/" className={newindex.title}>
+            {data.site.siteMetadata.title}
+          </Link>
+          <div className="logo" />
+          <Menu
+            theme="dark"
+            mode="horizontal"
+            defaultSelectedKeys={["2"]}
+            style={{ lineHeight: "30px", float: "right" }}
+          >
+            <Link to="/contact" className={newindex.link}>
+              contact
+            </Link>
+            <Link to="/about" className={newindex.link}>
+              about
+            </Link>
+            <Link to="/posts/" className={newindex.link}>
+              posts
+            </Link>
+          </Menu>
+        </Header>
+        <Content
+          style={{
+            padding: "0 0px",
+            minWidth: "-webkit-fill-available",
+          }}
+        >
+          <div
+            className={newindex.content}
+            style={{
+              background: "lavenderblush",
+              padding: 50,
+            }}
+          >
+            {children}
+          </div>
+        </Content>
+        <Footer
+          style={{
+            textAlign: "center",
+            bottom: "0rem",
+            width: "100%",
+            color: "black",
+          }}
+        >
+          BGG ©2019
+        </Footer>
+      </Layout>
     </>
   )
 }
 
-Layout.propTypes = {
+Layout1.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export default Layout1

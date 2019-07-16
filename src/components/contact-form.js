@@ -34,10 +34,7 @@ class ContactForm extends React.Component {
     return (
       <div>
         <FancyTitle titleText="Contact Me" />
-        <form
-          onSubmit={this.handleSubmit}
-          //style={{ margin: "0 auto", width: "30rem" }}
-        >
+        <form onSubmit={this.handleSubmit}>
           <Row className={contactFormStyle.row}>
             <Col span={12}>
               <label>

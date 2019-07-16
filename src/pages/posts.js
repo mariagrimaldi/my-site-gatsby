@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Divider } from "antd"
 
 import PostLink from "../components/post-link"
 import Layout1 from "../components/newindex"

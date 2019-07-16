@@ -8,7 +8,6 @@ const PostLink = ({ post }) => (
     <Link to={post.frontmatter.path} className={postLink.PostsLink}>
       {post.frontmatter.title} - ({post.frontmatter.date})
     </Link>
-    {/* <Divider dashed style={{ backgroundColor: "black", width: "50%" }} /> */}
     <hr />
   </div>
 )
